@@ -27,15 +27,9 @@ public class Person {
     }
 
     public Person(String firstName, String lastName, int age, String pesel) throws NameUndefinedException, IncorrectAgeException {
-        if (checkFirstName(firstName)) {
-            this.firstName = firstName;
-        }
-        if (checkLastName(lastName)) {
-            this.lastName = lastName;
-        }
-        if (checkAge(age)) {
-            this.age = age;
-        }
+        setFirstName(firstName);
+        setLastName(lastName);
+        setAge(age);
         this.pesel = pesel;
     }
 
